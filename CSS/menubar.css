@@ -1,0 +1,61 @@
+hr{
+	border:dotted 1px;
+	border-color:#F96;
+}
+.menuTemplate1
+{
+    
+    margin: 0 auto; width: auto;float:left;
+    
+    behavior: url("/horizontal/menuh/cssmenu.htc");
+    position:relative;
+    z-index:4;
+    height: 36px;
+    background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent;
+    background-color: transparent;
+    border: 1px solid #9FF;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 0;
+	margin-bottom:10px;
+	width:1347px;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	
+}
+.menuTemplate1 li
+{
+    padding: 0;
+    float: left;
+    height: 36px;
+    position: relative;/*delete it if you want submenu to be positioned relative to the whole menu instead of this li element*/
+    color: black;
+    z-index:5;
+}
+
+.menuTemplate1 a
+{
+    padding: 0 30px;
+    line-height: 36px; 
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #003;
+    position: relative;
+}
+.menuTemplate1 li:hover a, .menuTemplate1 li.onhover a
+{
+    background: #FCC repeat-x 0 -48px;
+	  
+}
+       
+.menuTemplate1 li.separator
+{
+    font-size:0;
+    overflow:hidden;   
+    border-right:1px solid #BBBBBB;
+    z-index:4;
+}
+               
+   
