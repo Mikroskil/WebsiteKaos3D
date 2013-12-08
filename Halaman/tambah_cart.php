@@ -7,7 +7,7 @@
 	if(isset($_SESSION['username']))
 	{
 		$username=$_SESSION['username'];
-		$cek = mysql_query("select nama_product from baju where no='".$no."'");
+		$cek = mysql_query("select nama_product from baju where kode='".$no."'");
 		$pil = mysql_fetch_array($cek);
 		$pil1=$pil['nama_product'];
 	
@@ -24,5 +24,5 @@
 			mysql_query("UPDATE keranjang SET jumlah = jumlah + 1 WHERE nm_pembeli= '$username' AND product='$pil1'");
 		}	
 	}
-	header("location:".$url);
+	//header("location:".$url);
 ?>

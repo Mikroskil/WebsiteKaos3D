@@ -15,7 +15,7 @@
     <div id="contain1">
     	<h2 align="center">Your Cart</h2>
     	<table id="table" align="center">
-        <tr>
+        <tr >
         	<td>No.</td>
             <td>Qty</td>
             <td>Product</td>
@@ -46,8 +46,28 @@
 					 $i++;
 				}
 			?>
+         <tr>
+        	<td style="border-bottom: 1px dotted #09F;" colspan="5"></td>
+        </tr>
+            <tr>
+            	<td colspan="3">&nbsp;</td>
+            	<td>Harga Keseluruhan</td>
+                <td>5000</td>
+            </tr>
         </table>
-        
+        <input type="button" value="submit" style="margin-left:830px; margin-top:5px;"/>
+ 			
+        <h2 align="center">Submit</h2>
+        <table id="table" align="center">
+        	<tr>
+        		<td>No.</td>
+        	    <td>Qty</td>
+        	    <td>Date</td>
+        	    <td>Price</td>
+        	    <td>Total</td>
+                <td>Status</td>
+        	</tr>
+        </table>       
     </div>
 
 </body>
