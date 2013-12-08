@@ -18,5 +18,5 @@
 	else {
 	$input = mysql_query("insert into user values('$title','$nama1','$nama2','$email','$username','$password2','$tanggal','$alamat','$telp','$provinsi','$kota','$kodepos')");
 	}
-	header('location:register.php');
+	header('location:Halaman/register.php');
 ?>

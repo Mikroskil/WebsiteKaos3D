@@ -9,12 +9,15 @@
 
 <body>
     
-    <div align="center" style="height:500px;">
+    <div style="height:500px;">
     	<h1 align="center"><font face="Lucida Sans Unicode, Lucida Grande, sans-serif" >Contact Us</font></h1>
-        <div>
-        For More Information you contact us on :
+        <div style=" margin-left:500px;">
+        <p>We are ready for More information or suggestion!</p>
+        <p>Our Service Time Monday-Friday, 09:00-16:30 WIB, And Saturday, 09:00-12:00 WIB</p>
+        <p>you can contact us on :</p>     
         <p>HOTLINE : 061 7723109, 061 7723502</p>
         <p>Yahoo Messenger : Mighty_Shirt</p>
+        <p>Address : St.Thamrin No.1A, Medan</p>
         </div>
     </div>  
 

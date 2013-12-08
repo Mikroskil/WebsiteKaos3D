@@ -9,7 +9,7 @@
  
 <body>
     <h2 align="center">Welcome Master</h2>
-    <div id="contain1">
+    <div id="contain2">
     	<div id="right">
         	<div id="right1">
             <h3>Data</h3>
@@ -67,12 +67,13 @@
           <div id="left1">
         <h3>Member</h3>
         View Member <input name="Submit" type="submit" value="View"/>
+        <a href="index.php?page=12">View</a>
         </div>    
         </div> 
         
     </div>
     
-    <div id="list">
+    <div id="list1">
 		<table class="list">
  
         <tr style="background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent;">
@@ -92,7 +93,7 @@
         <td>Processing</td>
         <td>26/10/2013</td>
         <td>Rp.10.000.000,-</td>
-        <td>[<a href="index.php?page=5">View</a>]</td>
+        <td>[<a href="index.php?page=13">View</a>]</td>
         </tr>
         </table>
     </div>

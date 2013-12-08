@@ -15,9 +15,10 @@
     
     <div id="contain1">
     	<div id="primary">
-        <img src="images/man.png" />
+        <img src="images/man.png" style=" box-shadow:-21px 14px 15px -20px #f9eca0;" />
+        <img src="images/10.jpg" width="750" style="margin-top:30px;"/>
         </div>
-        <div id="secondary">
+        <div id="secondary1">
         
         	<?php
             $query1 = mysql_query("select * from baju ");
@@ -31,10 +32,10 @@
 				}
 			?> 
         </div>
-    </div>
-    <div id="list">
     	
-    </div>
-   
+        <div id="list">
+            <img src="images/men.png" />
+        </div>
+   </div>
 </body>
 </html>

@@ -48,6 +48,31 @@ switch($page)
 	include "htb.php";
 	break;
 	
+	case "12";
+	include "memberlist.php";
+	break;
+	
+	case "13";
+	include "orderlist.php";
+	break;
+	
+	case "14";
+	include "memberprofile.php";
+	break;
+	
+	case "15";
+	include "privacypolicy.php";
+	break;
+	
+	case "16";
+	include "faq.php";
+	break;
+	
+	case "17";
+	include "returnpolicy.php";
+	break;
+	
+	
 	
 	default;
 	include "home.php";
