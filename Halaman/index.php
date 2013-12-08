@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Mighty Shirt</title>
+<title>Untitled Document</title>
 	<link rel="stylesheet" href="CSS/menubar.css" type="text/css">
 	<link href="CSS/contoh2.css" rel="stylesheet" type="text/css" />
 	<link href="Javascript/js-image-slider.css" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
 	<div id="container">
     
     	<img id="logo" src="images/logo_300.png" alt="Mighty Shirt" />
-         <img src="images/2.jpg" align="right" width="700" height="100" style="box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);"/>
+         <img src="images/2.jpg" align="right" width="800" height="150" style="box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);"/>
         </div>   
 </div>
     <div style="width:1100px;">
@@ -42,19 +42,7 @@
             </li> <li class="separator"></li> 
             <li>
             <span class="topLink2" hasub="1">
-            <a class="mlink" href="">
-             <?php
-                   	
-					if(!isset($_SESSION['username']))
-				{
-					echo ' Login';
-				}
-				
-				else{
-				echo $_SESSION['username'];	
-				}
-			?>
-            </a> 
+            <a class="mlink" href="">Login</a> 
             <span class="sub">
             
             <table cellspacing="2" cellpadding="2">
@@ -92,7 +80,14 @@
             </table>
             </span>
             </span>
-            </li> <li class="separator"></li>   
+            </li> <li class="separator"></li> 
+             <?php
+				if(isset($_SESSION['username']))
+				{
+					if($_SESSION['username']=="admin")
+					echo '<li><a href="index.php?page=7">Admin</a></li><li class="separator"></li> ';
+				}
+			?>
             
             </ul>     
         </div>  
@@ -102,22 +97,7 @@
     
     
     <div id="footer"> 
-    <div style="width:1100px; height:auto;">
-        <div align="left" style="margin-left:300px; padding-top:20px; float:left;">
-        <h4>Mighty Shirt</h4>
-        <p><a href="index.php?page=9">About Us</a></p>
-        <p><a href="index.php?page=10">Contact Us</a></p>
-        <p><a href="index.php?page=16">FAQ</a></p>
-        </div>
-        
-        <div style="margin:0 0 0px 50px; padding-top:20px; float:left; ">
-        <h4>Other</h4>
-        <p><a href="index.php?page=15">Privacy Policy</a></p>
-        <p><a href="index.php?page=11">How To Buy</a></p>
-        </div>
-    </div>
-    
-    <div style=" padding-top:150px;">
+    &nbsp;
     	<h3 align="center">We Accept</h3>
     	<hr width="700px"/>
     	<img src="images/bca1.png" />
@@ -125,7 +105,7 @@
         <img src="images/mandiri1.png" />
         <img src="images/niaga.png" width="141" height="50"/>
 		<br />
-	</div>
+
 		<p>&copy; Copyright 2013 Mighty Shirt All Rights Reserved. </p>
 		&nbsp;
     </div> 
