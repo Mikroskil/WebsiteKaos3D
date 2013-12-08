@@ -11,9 +11,9 @@
     
     <div id="form" align="center">
     	
-    <form name="daftar" method="post" action="Halaman/register2.php" onSubmit="return validasi()">
+    <form name="daftar" method="post" action="register2.php" onSubmit="return validasi()">
 		<fieldset>
-        <legend><h2><font color="#FFFF66">Register Form</font></h2></legend>
+        <legend>Register Form</legend>
      				<div id="regis">
                     <label for="gender">Title</label>  
                     <input type="radio" name="gender" id="gender1" value="Mr.">Mr.
@@ -87,7 +87,6 @@
         </center>
         </fieldset>
  	</form>
-    <p>*All information above shall be accurate because the data will be used for transaction</p>
 
    
     </div> 

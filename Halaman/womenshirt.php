@@ -17,27 +17,14 @@
     	<div id="primary">
         <img src="images/women.png" />
         </div>
-        <div id="secondary1">
-       
-        	<?php
-            $query1 = mysql_query("select * from baju");
-				while($baris = mysql_fetch_array($query1))
-				{	
-					if($baris[2]=="perempuan"){
-					$gambar = substr($baris[4], 3);
-					echo'<div id="product">
-            				<img src="'.$gambar.'">
-							<a href="halaman/tambah_cart.php?url=../index.php?page=4&no='.$baris[0].'"><img src="images/add to cart.png" id="gbr_add"/></a>
-            			</div>';
-					}
-				}
-			?> 
+        <div id="secondary">
+        <img src="images/men.png" />
         </div>
-   
+    </div>
     <div id="list">
     	 <img src="images/men.png" />
     </div>
-  </div>
+ 
 
 </body>
 </html>

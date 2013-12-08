@@ -7,28 +7,46 @@
 </head>
 
 <body>
-<img src="images/Banner1.jpg" width="1348px" height="180px" style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); margin-top:10px;"/>
  <div id="contain">
-  
 	<div id="primary">
         	<div id="sliderFrame">
         		<div id="slider">
-            		<a href=""><img src="images/3.jpg" width="200" height="500"/></a>
-            		<a href=""><img src="images/4.jpg"  width="200" height="500" /></a>
-            		<a href=""><img src="images/5.jpg" width="200" height="500" /></a>
-            		<a href=""><img src="images/6.jpg" width="200" height="500"/></a>
-            		<a href=""><img src="images/7.jpg" width="200" height="500"/></a>   
+            		<a href=""><img src="images/110478_20081104173951-hot-promo-icon-1.jpg" width="200" height="500"/></a>
+            		<a href=""><img src="images/code_promo.jpg"  width="200" height="500" /></a>
+            		<a href=""><img src="images/promo.gif" width="200" height="500" /></a>
+            		<a href=""><img src="images/promo.jpg" width="200" height="500"/></a>
+            		<a href=""><img src="" width="200" height="500"/></a>   
         		</div> 
-           	</div> 
-            <img src="images/10.jpg" width="750" style="margin-top:30px;"/>   
+           	</div>     
         </div> 
-        	<div id="secondary">
-            <div>
-            <a href=""><img src="images/8.jpg" width="300" style="margin-bottom:10px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);"/></a>
-            <a href=""><img src="images/9.jpg" width="300" style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);"/></a>
-            </div>
-            </div>
         
+        <div id="secondary">
+        
+        	<?php
+				require('Halaman/username_home.php');
+              	if(!isset($_SESSION['username']))
+				{		
+                	echo'<div id="login">
+    					<h3>User Login</h3>
+                   		<form name="login" action="halaman/login.php" method="post">
+                    		<div id="a">
+                    			<label for="id">User Name:</label><br /><br />
+								<label for="sandi">Password:</label>
+                    		</div>
+        		
+                			<div id="b">
+            					<input type="text" placeholder="enter your username" name="id"/><br />	
+            					<input type="password" placeholder="********" name="sandi"/>
+               				</div>
+							<input type="hidden" value="../Index.php" name="url">
+            				<input class="submit" id="warna" type="submit" value="login" />
+        				</form>
+    					<p> Not yet a Member?
+        				<a href="index.php?page=5">Register Now</a></p>
+   			 			</div> <!-- End of login -->';
+             	}
+			?>
+        </div> <!-- end of secondary -->
     </div>
 </body>
 </html>

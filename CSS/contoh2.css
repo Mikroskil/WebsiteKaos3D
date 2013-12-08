@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background:#F96;
+	background:#C90;
 	margin: 0; padding: 0; 
 	font-family:Arial, Helvetica, sans-serif; font-size: 12px;
 	
@@ -17,7 +17,6 @@ ul {
 	position:absolute;
 	width: 200px; height: 160px;
 	margin: 0 auto; display:block;
-	margin-left:100px;
 }
 
 .container {
@@ -52,17 +51,18 @@ ul {
 }
 
 #warna{
-	 box-shadow:inset -21px 14px 15px -20px #f9eca0; 
-	 background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent; 
+	 box-shadow:inset -21px 14px 15px -20px #f9eca0; background:
+	 -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d6bfde), color-stop(1, #409ba1) ); 
+	 background:-moz-linear-gradient( center top, #d6bfde 5%, #409ba1 100% );  
 	 background-color:#d6bfde; -moz-border-radius:27px; 
-	 -webkit-border-radius:27px; border-radius:10px; 
+	 -webkit-border-radius:27px; border-radius:27px; 
 	 font-family:Arial Black; 
 	 font-size:14px; padding:3px 10px;
 	 margin-top:5px;
 }
 a {
 	text-decoration:none;
-	color:#039;
+	color:purple;
 }
 
 ul {
@@ -70,50 +70,28 @@ ul {
 }
 #contain {
 	width: 1100px; 
-	height: 800px;
+	height: 600px;
 	margin-left:120px;
-	margin-top:25px;
+	margin-top:8px;
 }
 
 #contain1 {
 	width: 1100px; 
-	height:1000px;
-	margin:10px 20px 10px 120px;
-	margin-bottom:40px;
-	
-
-}
-#contain2 {
-	width: 1100px; 
-	height:350px;
-	margin:10px 20px 10px 120px;
-	margin-bottom:40px;
-	
+	height:550px;
+	margin:10px 0px 10px 120px;
 
 }
 #primary {
 	float:left;
 	width:750px;
-	height:800px;
-	
+	height:500px;
+	background:#3FF;
 }
-
 #secondary {
 	float:right;
 	width:300px;
-	height:800px;
+	height:500px;
 	float:right;
-	
-}
-
-#secondary1 {
-	float:right;
-	width:300px;
-	height:800px;
-	float:right;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
-	margin-bottom:20px;
 }
 
 #a{
@@ -135,17 +113,16 @@ ul {
 #footer {
 	width:1100;
 	text-align:center;
-	height:auto;
-	background-color:#C33;
 }
 
 #login {
 	width:278px;
-	border: 1px solid #c0943c;
+	border: 5px solid #c0943c;
 	padding: 10px; background: #efdb9e; 
 	color:#95844d; font-size: 10px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
+	
 }
 
 #login input type:submit{
@@ -155,9 +132,6 @@ ul {
 #form{
 	width:450px;
 	margin-left:450px;
-	margin-top:50px;
-	margin-bottom:20px;
-
 }
 
 fieldset {
@@ -175,91 +149,46 @@ p{
 #left{
 	width:530px;
 	height:300px;
+	border:1px solid;
 	float:right;
 	margin-top:10px;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
 	
 }
 #left1{
 	width:530px;
 	height:30px;
-	background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent;
-    background-color: transparent;
-	border-radius: 3px 3px 3px 3px;
-	border: 1px solid #9FF;
+	border:1px solid;
 }
 
 #right{
 	width:550px;
 	height:300px;
+	border:1px solid;
 	float:left;
 	margin-top:10px;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
 }
 
 #right1{
 	width:550px;
 	height:30px;
-	 background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent;
-    background-color: transparent;
-	border-radius: 3px 3px 3px 3px;
-	border: 1px solid #9FF;
-	
+	border:1px solid;
 }
 
 #list{
+	border:1px solid;
 	width:1100px;
 	height:150px;
 	margin-left:120px;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
-	margin-bottom:30px;
-	float:right;
-	
 	
 }
 .list{
 	border-collapse:collapse;
 	width:100%;
 	border-top:1px solid rgb(221, 221, 221);
-	
+	border-left:1px solid rgb(221, 221, 221);
 	margin:0px;
 	
 }
-#list1{
-	width:1100px;
-	height:150px;
-	margin-left:120px;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
-	margin-bottom:30px;
-
-	
-	
-}
-#profiletable{
-	width:20%;
-	height:auto;
-	
-	
-	margin-bottom:30px;
-}
-
-.profiletable{
-	border-collapse:collapse;
-	width:100%;
-	padding: 5px 5px 5px 5px;
-	font-size:14px;
-	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border: 1px solid #9FF;
-}
-
-.profiletable td{
-		padding: 5px 5px 5px 5px;
-}
-
 
 #table {
 	
@@ -269,6 +198,15 @@ p{
 	
 }
 
+#footer-nav li{
+	float:left;
+	display:inline;
+	margin-left:10px;
+	text-align:center;
+}
+#footer-nav{
+	margin-left:473px;
+}
 
 #regis label
 {
@@ -290,14 +228,6 @@ p{
 	margin-top:5px;
 }
 
-#product{
-	text-align:center;
-	width:145px;
-}
-
-#gbr_add{
-	width:130px;
-}
 
 .topLink2{
 	position:relative;
@@ -305,12 +235,52 @@ p{
 	font-size:12px
 }
 
+.topLink2 .mlink{
+	cursor:pointer;
+	margin:1px 0 0 8px;
+	font-family:Arial,Helvetica,sans-serif;
+	text-shadow:#fff 0 1px 1px;
+	color:#000;
+	padding:0 6px;
+	border-radius:4px;
+	display:-moz-inline-box;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	height:20px;
+	vertical-align:top;
+	line-height:20px
+}
+
+.topLink2 a.mlink,.topLink2 a.slink{
+	text-decoration:none
+}
+
+.topLink2 a.mlink:active{
+	color:#FF9
+}
+
+
+.topLink2:hover .mlink,.topLink2[current="1"] .mlink{
+	color:white;
+	text-shadow:#333 1px 1px 1px;
+	box-shadow:#999 1px 1px 3px,rgba(0,0,0,0.5) -1px -1px 1px inset,rgba(255,255,255,0.5) 1px 1px 1px inset
+}
+
+.topLink2:hover .mlink,.topLink2[current="1"] .mlink{
+	background-color:#148BDD
+}
+
+.topLink2:hover .mlink{
+	background-color:#249BED
+}
+
 .topLink2 .sub{
 	line-height:16px;
 	display:none;
 	position:absolute;
-	top:25px;
-	left:2px;
+	top:21px;
+	left:8px;
 	box-shadow:rgba(0,0,0,0.7) 1px 1px 3px;
 	border-radius:4px;
 	background-color:#fff;
@@ -318,6 +288,9 @@ p{
 	z-index:101;
 	
 }
+
+
+
 
 .topLink2:hover .sub{
 	display:-moz-inline-box;
@@ -329,3 +302,4 @@ p{
 .topLink2[hasub="1"]:hover .mlink{
 	border-radius:4px
 }
+

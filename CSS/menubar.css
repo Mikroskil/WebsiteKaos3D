@@ -1,7 +1,127 @@
-hr{
-	border:dotted 1px;
-	border-color:#F96;
+@charset "utf-8";
+/* CSS Document */
+
+/* Sinbun css */
+
+#container{
+	width:950px;
+	margin:0 auto;
 }
+
+#topbar{
+	width:auto;
+	display:block;
+	height:80px;
+	background:#999;
+	margin-top:20px;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+
+h3{
+	text-align:center;
+}
+
+li{
+	list-style:none outside none;
+}
+
+
+#navbar{
+	width:auto;
+	display:block;
+	height:auto;
+	margin-top:10px;
+	
+	padding-bottom:7px;
+	background: #6FC
+	
+}
+
+#main{
+	width:auto;
+	height:1000px;
+	display:block;
+	background: none;
+	margin-top:50px;
+	
+}
+
+#main1{
+	width:auto;
+	height:400px;
+	display:block;
+	background: none;
+}
+
+#main2{
+	width:700px;
+	height:300px;
+	display:block;
+	background: #F00
+}
+
+#column_left{
+	width:700px;
+	height:700px;
+	margin-right:10px;
+	margin-bottom:20px;
+	float:left;
+	border-bottom:1px dotted;
+	
+}
+
+#right{
+	width:230px;
+	float:right;
+}
+
+#column_right{
+	width:230px;
+	float:right;
+	margin-bottom:20px;
+}
+
+#column_right1{
+	width:230px;
+	float:right;
+	border: solid thin #CCC;
+	border-bottom:hidden;
+	
+}
+
+#bottom_left{
+	width:345px;
+	float:left;
+	margin-right:10px;
+	background:#9FF
+}
+
+#bottom_right{
+	width:345px;
+	float:left;
+	background:#CFF
+}
+
+div.spacer{
+	clear:both;
+	height:10px;
+	display:block;
+}
+
+#footer{
+	width:auto;
+	display:block;
+	height:25px;
+	background:#DC6F43
+}
+
+
+
 .menuTemplate1
 {
     
@@ -11,16 +131,17 @@ hr{
     position:relative;
     z-index:4;
     height: 36px;
-    background: -moz-linear-gradient(left bottom , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(552, 152, 102) 0px, rgb(594, 94, 94) 80%, rgb(594, 94, 94) 81%, rgb(552, 152, 102) 100%) repeat scroll 0% 0% transparent;
-    background-color: transparent;
-    border: 1px solid #9FF;
+    background: -moz-linear-gradient(center top , rgba(0, 0, 0, 0.2) 0px, transparent 5%, transparent 97%, rgba(0, 0, 0, 0.45) 100%) repeat scroll 0% 0%, -moz-linear-gradient(left center , rgba(0, 0, 0, 0.2) 0px, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0% 0%, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC") no-repeat scroll 50% 50%, -moz-linear-gradient(center bottom , rgb(102, 102, 102) 0px, rgb(94, 94, 94) 50%, rgb(112, 112, 112) 51%, rgb(128, 128, 128) 100%) repeat scroll 0% 0% transparent;
+    background-color: transparent;;
+    border: 1px solid #BBB;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     padding: 0;
+	margin-top:10px;
 	margin-bottom:10px;
-	width:1347px;
+	width:950px;
 	border-radius: 4px 4px 4px 4px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	
 }
 .menuTemplate1 li
@@ -40,20 +161,24 @@ hr{
     font-size: 12px;
     font-weight: bold;
     display: inline-block;
+    outline: 0;
     text-decoration: none;
-    color: #003;
+    color: black;
     position: relative;
 }
 .menuTemplate1 li:hover a, .menuTemplate1 li.onhover a
 {
-    background: #FCC repeat-x 0 -48px;
-	  
+    background:white url(../bg.gif) repeat-x 0 -48px;
+   
+   
 }
        
+/*for the top-level separators*/
 .menuTemplate1 li.separator
 {
     font-size:0;
-    overflow:hidden;   
+    overflow:hidden;
+    
     border-right:1px solid #BBBBBB;
     z-index:4;
 }

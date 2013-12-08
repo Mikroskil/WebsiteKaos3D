@@ -1,5 +1,5 @@
 <?php 
-	include('koneksi.php');
+	require('koneksi.php');
 	$title =$_POST['gender'];
 	$nama1 = $_POST['firstname'];
 	$nama2 = $_POST['lastname'];
@@ -13,11 +13,10 @@
 	$kota = $_POST['city'];
 	$kodepos = $_POST['postcode'];
 	$password2=md5($password);
-	$tgl=date('y-m-d');
 	$cek = mysql_query("select * from user where username='$username'");
 			if(mysql_num_rows($cek)>0) die("Username $username sudah ada.");
 	else {
-	$input = mysql_query("insert into user values('$title','$nama1','$nama2','$email','$username','$password2','$tanggal','$alamat','$telp','$provinsi','$kota','$kodepos','$tgl')");
+	$input = mysql_query("insert into user values('$title','$nama1','$nama2','$email','$username','$password2','$tanggal','$alamat','$telp','$provinsi','$kota','$kodepos')");
 	}
-	header('location:../index.php?page=8');
+	header('location:register.php');
 ?>
