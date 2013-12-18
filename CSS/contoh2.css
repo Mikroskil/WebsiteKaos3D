@@ -293,6 +293,7 @@ p{
 #product{
 	text-align:center;
 	width:145px;
+	float:left;
 }
 
 #gbr_add{

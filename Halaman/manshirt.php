@@ -16,9 +16,13 @@
     <div id="contain1">
     
     	<div id="primary">
-        <img src="images/man.png" />
+        <object width="550" height="400">
+<param name="movie" value="swf/edit baju.swf">
+<embed src="swf/edit baju.swf" width="550" height="400">
+</embed>
+</object>
         </div>
-        <div id="secondary">
+        <div id="secondary1">
        
         	<?php
             $query1 = mysql_query("select * from baju");
@@ -26,8 +30,22 @@
 				{	
 					if($baris[2]=="laki"){
 					$gambar = substr($baris[4], 3);
+					
+					$total= $baris[3];
+					$rupiah = "";
+					$jml = strlen($total);
+				 	while($jml > 3)
+				 	{
+						$rupiah = "." . substr($total,-3) . $rupiah;
+						$l = strlen($total) - 3;
+						$total = substr($total,0,$l);
+						$jml = strlen($total);
+					}
+				 	$rupiah = "Rp " . $total . $rupiah . ",-";
+					
 					echo'<div id="product">
-            				<img src="'.$gambar.'">
+            				<img src="'.$gambar.'" width="100px" height="100px"><br>
+							Harga :'.$rupiah.'
 							<a href="halaman/tambah_cart.php?url=../index.php?page=3&no='.$baris[0].'"><img src="images/add to cart.png" id="gbr_add"/></a>
             			</div>';
 					}
